@@ -30,11 +30,11 @@ export const loadCharactersFromAPI = async () => {
       if (!response.ok) {
         throw new Error('Failed to load characters');
       }
-      
+
       const data = await response.json();  
-      // Check if characters are nested in the body object
-      if (data.body && data.body.characters) {
-        return data.body.characters; // Extract the characters from the body
+      
+      if (data.body && data.body.characters) { // characters are nested in the body object
+        return data.body.characters; // extract characters from the body
       } else {
         console.log('No characters found in the API response body.');
         return [];
