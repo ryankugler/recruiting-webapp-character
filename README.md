@@ -1,3 +1,31 @@
+# Overview of Changes I Made
+
+- Character Creation (with attribute and skill customization)
+- Class Eligibility (dynamically display available classes based on character's attributes, with added visual indicators)
+- Skill Checks
+- Multiple Character support
+- Character saving through API integration
+- Characters are loaded into the app from the API on refresh
+
+## What I would continue working on if time permitted:
+
+- **Party Skill Check Rolling**
+   - Use the highest-skiled character in a party to perform the roll on behalf of the group
+
+- **Character Deletion** via the API which would add functionality to delete characters from the application and the API
+  - Deletion could be done through a 'DELETE' request
+  - Allows for the removal of unwanted or obsolete characters
+ 
+- **More Sophisticated UI/UX**
+
+- **Character Import/Export**
+  - Allow users to export their characters as JSON files and import them in the app later, giving users ability to backup or share their character data
+
+
+
+
+
+
 # recruiting-webapp-character
 React coding test
 
